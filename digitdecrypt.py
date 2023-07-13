@@ -33,11 +33,12 @@ class Solution:
             i = 1
             answer = 0
             _ = 0
-            while int(string) > 9:
-                 for _ in string:
-                      answer += int(string[-i])
-                      i += 1
-            return answer
+            while num > 9:
+                dig_list = [int(i) for i in str(num)]
+                num = 0
+                for i in dig_list:
+                    num += 1
+            return num
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
             pass
