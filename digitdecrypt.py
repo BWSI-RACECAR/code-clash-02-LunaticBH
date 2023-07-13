@@ -30,11 +30,13 @@ Input: 0 Output: 0
 class Solution:    
     def digitdecrypt(self, num):
             string = str(num)
-            i = 0
+            i = 1
             answer = 0
+            _ = 0
             while int(string) > 9:
-                 for i in string:
+                 for _ in string:
                       answer += int(string[-i])
+                      i += 1
             return answer
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
