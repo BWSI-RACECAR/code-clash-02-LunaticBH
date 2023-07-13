@@ -35,7 +35,7 @@ class Solution:
             while int(string) > 9:
                  for i in string:
                       answer += int(string[-i])
-
+            return answer
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
             pass
