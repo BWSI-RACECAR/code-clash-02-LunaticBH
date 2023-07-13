@@ -29,10 +29,6 @@ Input: 0 Output: 0
 
 class Solution:    
     def digitdecrypt(self, num):
-            string = str(num)
-            i = 1
-            answer = 0
-            _ = 0
             while num > 9:
                 dig_list = [int(i) for i in str(num)]
                 num = 0
